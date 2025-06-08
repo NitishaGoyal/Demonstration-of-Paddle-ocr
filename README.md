@@ -1,6 +1,9 @@
+
 # 📄 PaddleOCR Text Extraction Project
 
 This project uses [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR), a powerful OCR (Optical Character Recognition) tool, to extract and visualize text from images using Python.
+
+---
 
 ## 🧠 Features
 
@@ -19,20 +22,24 @@ Before running the code, install the required libraries:
 # Upgrade pip
 python -m pip install --upgrade pip
 
-# Install PaddlePaddle (check [https://www.paddlepaddle.org.cn/install/quick](https://www.paddlepaddle.org.cn/install/quick) for GPU instructions)
+# Install PaddlePaddle (check the website for GPU-specific instructions)
 python -m pip install paddlepaddle
 
 # Install PaddleOCR
 pip install paddleocr
 
-# Clone the official PaddleOCR repository
+# Clone the official PaddleOCR repository (for font and additional utilities)
 git clone https://github.com/PaddlePaddle/PaddleOCR
+```
 
-🧾 Usage
-Place the image you want to process inside a folder (e.g., flipkart images/).
+---
 
-Run the Python script.
+## ▶️ Usage
 
+1. Place the image you want to process inside a folder (e.g., `flipkart images/`).
+2. Run the following script:
+
+```python
 from paddleocr import PaddleOCR, draw_ocr
 from matplotlib import pyplot as plt
 import cv2
@@ -67,11 +74,23 @@ plt.figure(figsize=(15, 15))
 plt.imshow(annotated)
 plt.axis('off')
 plt.show()
+```
 
-🧪 Sample Output
-Recognized text printed in the console.
+---
 
-Annotated image with bounding boxes and labels shown using matplotlib.
+## 🧪 Sample Output
 
-📜 License
-This project uses PaddleOCR, which is under the Apache 2.0 License."# Demonstration-of-Paddle-ocr" 
+- ✅ Recognized text printed in the console.
+- 🖼️ Annotated image with bounding boxes and text shown using matplotlib.
+
+---
+
+## 📜 License
+
+This project uses [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR), which is under the Apache 2.0 License.
+
+---
+
+## 🔖 Repository
+
+**# Demonstration-of-Paddle-ocr**
